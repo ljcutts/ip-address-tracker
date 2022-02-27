@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700;800&family=Manrope:wght@700&family=Outfit:wght@200&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: auto;
+  background: hsl(223, 19%, 93%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.background-image{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("../public/images/pattern-bg.png");
+  min-width: 375px;
+  height: 350px;
+}
+
+.background-image h1{
   color: white;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.enter-ip input{
+  height: 60px;
+  width: 340px;
+  border-radius: 0.7rem;
+  border: none;
+  padding-left: 1rem;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+  outline: none;
+}
+
+.enter-ip button{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-top-right-radius:0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  border: none;
+  background: hsl(0, 0%, 17%);
+  transform: translateX(-60px);
+  cursor: pointer;
+}
+
+.display-data{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 11rem;
+  margin: 0 auto;
+  height: 350px;
+  width: 340px;
+  background:  white;
+  z-index: 999;
+  /* margin-bottom: 1rem; */
+  border-radius: 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.data-section{
+  margin-bottom: 1.5rem;
+}
+
+.data-section span{
+  line-height: 2rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.data-section p{
+  font-size: 22px;
+  font-weight: 15px;
+  font-weight: 500;
+}
+
+
+.map{
+  margin: 0 auto;
+  min-width: 375px;
+  height: 800px;
+}
+
+#map{
+  position: relative;
+  bottom: 22rem;
+  width: 100%;
+  height: 100vh;
 }
