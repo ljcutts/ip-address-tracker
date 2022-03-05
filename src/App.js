@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react'
-import env from "react-dotenv";
 import './App.css';
 import MapComp from './MapComp';
 import { apiKey } from './APIKey';
@@ -14,11 +13,9 @@ import { apiKey } from './APIKey';
     const [city, setCity] = useState([])
     const [time, setTime] = useState([])
     const [ISP, setISP] = useState([])
-    const [lat, setLat] = useState(40.0);
-    const [lng, setLng] = useState(-89.0);
-   const [coords, setCoords] = useState([0, 0]);
-
-  //  const apiKey = window.env.API_KEY;
+    const [lat, setLat] = useState(0);
+    const [lng, setLng] = useState(0);
+    const [coords, setCoords] = useState([0, 0]);
   
 
     const fetchIpData = async() => {
@@ -55,7 +52,6 @@ import { apiKey } from './APIKey';
 
     useEffect(() => {
         fetchIpData();
-        console.log(coords)
     }, [])
 
    

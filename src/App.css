@@ -10,7 +10,7 @@
 }
 
 body{
-  height: 1150px;
+  height: auto;
   background: hsl(223, 19%, 93%);
 }
 
@@ -96,7 +96,7 @@ input:focus{
 
 .map{
   margin: 0 auto;
-  height: 100%;
+  height: 950px;
   width: 100%;
 }
 
@@ -105,4 +105,44 @@ input:focus{
   bottom: 22rem;
   width: 100%;
   height: 100vh;
+}
+
+@media only screen and (min-width: 1000px) {
+  .enter-ip input{
+     width: 540px;
+  }
+
+  #map{
+    bottom: 13rem;
+    height: 1200px;
+  }
+
+.display-data{
+  flex-direction: row;
+  bottom: 8.5rem;
+  height: 150px;
+  width: 1000px;
+  padding-left: 2rem;
+}
+
+.data-section{
+  padding-left: 2rem;
+  text-align: left;
+  border-right: solid rgba(0, 0, 0, 0.2);
+  border-width: thin;
+  height: 75px;
+  width: 250px;
+  margin-bottom: 0;
+  padding-right: 3rem;
+}
+
+.data-section:last-child{
+  border: none;
+}
+
+.data-section p{
+  width: 218px;
+}
+
+
 }

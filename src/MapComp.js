@@ -38,7 +38,7 @@ function MapComp({coords}) {
           >
             <Popup className="request-popup">
               <div style={popupContent}>
-                <div style={okText}>Hey, I live here!</div>
+                <div style={okText}>This is the IP-Address Location!</div>
               </div>
             </Popup>
           </Marker>
