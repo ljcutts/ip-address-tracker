@@ -4,7 +4,7 @@ import { MapContainer, Popup, TileLayer, Marker, useMap } from "react-leaflet";
 import { popupContent, okText } from "./PopupStyles";
 import "./App.css";
 
-//Customization for the Market
+//Customization for the Marker
 const icon = new L.icon({
   iconUrl: "images/icon-location.svg",
   iconSize: [45, 45],
@@ -41,7 +41,7 @@ function MapComp({coords}) {
             animate={true}
             icon={icon}
           >
-            {/* Message that appears when you click on the Market */}
+            {/* Message that appears when you click on the Marker */}
             <Popup className="request-popup">
               <div style={popupContent}>
                 <div style={okText}>This is the IP-Address Location!</div>
