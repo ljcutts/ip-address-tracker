@@ -1,4 +1,4 @@
-// CSS For the Popup Message On The Market Of The Map
+// CSS For the Popup Message On The Marker Of The Map
 const popupContent = {
   textAlign: "center",
   height: "20px",
